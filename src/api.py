@@ -25,7 +25,7 @@ from src.inference import FraudDetector
 
 # ─── Configuration via environment variables ─────────────────────────────────
 
-MODEL_PATH = os.getenv("MODEL_PATH", "models/XGBoost.joblib")
+MODEL_PATH = os.getenv("MODEL_PATH", "models/train_smote/XGBoost.joblib")
 SCALER_PATH = os.getenv("SCALER_PATH", "data/scaler.joblib")
 DEFAULT_THRESHOLD = float(os.getenv("DEFAULT_THRESHOLD", "0.5"))
 
